@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-10-01T19:56:13.463534" rpa="false" schemaversion="5">
+<suite id="s1" name="Teste Pesquisa Amazon" source="C:\Users\braya\OneDrive\Área de Trabalho\Faculdade\3 semestre\testes-gestao-e-qualidade\AULA_02\teste_pesquisa_amazon.robot">
+<test id="s1-t1" name="Pesquisa de Produto na amazon" line="10">
+<kw name="Open Browser ${URL}">
+<msg time="2024-10-01T19:56:13.821598" level="FAIL">No keyword with name 'Open Browser ${URL}' found. Did you try using keyword 'SeleniumLibrary.Open Browser' and forgot to use enough whitespace between keyword and arguments?</msg>
+<arg>${BROWSER}</arg>
+<status status="FAIL" start="2024-10-01T19:56:13.821598" elapsed="0.000000">No keyword with name 'Open Browser ${URL}' found. Did you try using keyword 'SeleniumLibrary.Open Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>${PRODUTO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-01T19:56:13.821598" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=nav-search-submit-Button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-10-01T19:56:13.821598" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>${PRODUTO}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2024-10-01T19:56:13.821598" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-10-01T19:56:13.821598" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-01T19:56:13.813560" elapsed="0.010241">No keyword with name 'Open Browser ${URL}' found. Did you try using keyword 'SeleniumLibrary.Open Browser' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<status status="FAIL" start="2024-10-01T19:56:13.463534" elapsed="0.360267"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Teste Pesquisa Amazon">Teste Pesquisa Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
