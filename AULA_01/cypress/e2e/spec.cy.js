@@ -16,7 +16,7 @@ describe('Login com Sucesso', () => {
 });
 
 
-describe('Login com Credenciais Incorretas', () => {
+describe('Login Credenciais Incorretas', () => {
   it('Erro com usuário inválido', () => {
     cy.visit('https://the-internet.herokuapp.com/login');
     cy.get('#username').type('usuário_incorreto');
